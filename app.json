@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "expo-splash-mre",
-    "slug": "project-slug",
-    "scheme": "project-scheme",
+    "name": "exposplashmre",
+    "slug": "exposplashmre",
+    "scheme": "exposplashmre",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,8 +10,7 @@
     "newArchEnabled": true,
     "runtimeVersion": "1.0.0",
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "project-bundle-identifier"
+      "supportsTablet": true
     },
     "plugins": [
       [
@@ -24,13 +23,10 @@
         }
       ]
     ],
-    "extra": {
-      "eas": {
-        "projectId": "project id"
-      }
-    },
     "updates": {
-      "url": "updates url"
+      "requestHeaders": {
+        "expo-channel-name": "main"
+      }
     }
   }
 }
