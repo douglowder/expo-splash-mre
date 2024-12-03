@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
+    "prebuild": "DEBUG=expo:* expo prebuild --clean -p ios",
+    "prebuild:nativedebug": "DEBUG=expo:* EX_UPDATES_NATIVE_DEBUG=1 expo prebuild --clean -p ios",
     "ios": "expo run:ios",
     "android": "expo run:android"
   },
